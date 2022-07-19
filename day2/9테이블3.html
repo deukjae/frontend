@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        h3{
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td,th{
+            padding : 10px ;
+            border: 1px solid black;
+            text-align: center;
+        }
+   
+    </style>
+</head>
+<body>
+    <!-- 1)칸 합치기 colspan, rowspan 연습
+         https://www.w3schools.com/html/html_table_colspan_rowspan.asp
+         2)시간표 작성하기 : colspan,rowspan 활용
+    -->
+    <h3>시간표</h3>
+    <table style="width: 60%; margin: auto;">
+        <tr>
+            <th></th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>국어</td>
+            <td>수학</td>
+            <td>사회</td>
+            <td rowspan="2">영어</td>
+            <td>과학</td>
+        </tr>
+        <tr> 
+            <td>2</td>
+            <td>수학</td>
+            <td>영어</td>
+            <td>국사</td>
+            <td>컴퓨터</td>
+        </tr>   
+        <tr>
+            <td>3</td>
+            <td rowspan="2">가정</td>
+            <td>과학</td>
+            <td>체육</td>
+            <td>기술</td>
+            <td>일본어</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>진로</td>
+            <td>한문</td>
+            <td>과학</td>
+            <td>체육</td>
+        </tr>
+        <tr>
+            <td colspan="6">점심시간 (12:30~13:30)</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>영어</td>
+            <td>사회</td>
+            <td>수학</td>
+            <td>수학</td>
+            <td rowspan="2">CA</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>국사</td>
+            <td rowspan="2">국어</td>
+            <td>일본어</td>
+            <td>도덕</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td></td>
+            <td></td>
+            <td>창체</td>
+            <td></td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
