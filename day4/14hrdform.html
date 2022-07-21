@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
+    
+    .header{
+      background-color: cadetblue;
+      color: white;
+      padding: 40px 20px;
+      margin-left: -10px;
+      margin-top: -20px;
+    }
+    .main{
+      background-color: azure;
+      height: 500px;
+      margin-left: -10px;
+    }
+    body{
+        width: 100%;
+    }
       table {
         border: 2px solid gray;
         margin: auto;
-        width: 600px;
+        width: 50%;
       }
 
       td {
@@ -23,20 +39,63 @@
         text-align: center;
         width: 250px;
       }
+      ul{
+        /* border: 1px solid blue; */
+        list-style: none;
+        background-color: brown;
+         overflow: hidden;
+         margin: auto;
+         margin-left: -10px;
+       }
+       ul > li{
+           float: left;
+           /* border: 1px solid black; */
+      }
+      /* 위의 border로 영역확인 : ul 영역이 li영역보다 작습니다. */
+       ul > li a{
+           display: block;
+           color: aliceblue;
+           padding: 14px 16px;
+           text-align: center;
+           text-decoration: none;
+       }
+       ul > li a:hover{
+          background-color: black;
+           color: white;
+       }
+
       button {
         cursor: pointer;
       }
-
+      .footer{
+        background-color: cornflowerblue;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin-left: -10px;
+      }
     </style>
 </head>
 <body>
-    <div style="width: 60%; margin: auto; max-width: 600px;">
-        <h3>홈쇼핑 회원 등록</h3>
+  <div class="header">
+    <!-- header -->
+    <h3 style="text-align: center;">홈쇼핑 회원등록</h3>
+  </div>
+  <div class="nav">
+    <!-- navigation -->
+    <ul>
+      <li><a href="">회원등록</a></li>
+      <li><a href="">회원목록조회</a></li>
+      <li><a href="">회원매출조회</a></li>
+      <li><a href="">홈으로</a></li>
+    </ul>
+  </div>
+  <div class = "main">
         <form action="">
-            <table style="width: 100;">
+            <table>
                     <tr>
                       <td class="title">회원번호(자동발생)</td>
-                      <td><input type="text"  /></td>
+                      <td><input type="text" /></td>
                     </tr>
                     <tr>
                       <td class="title">회원성명</td>
@@ -71,6 +130,12 @@
 
             </table>
         </form>
+
     </div>
+    <div class="footer">
+      <!-- footer -->
+      HRDKOREA Copyright&copy;2022 All rights reserved. Human Resources Development Service
+      of Korea.
+  </div>
 </body>
 </html>
