@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   "use strict"; 2번오류가 안나는것을 오류가 발생하도록 한다.
+      var v1 = 456;
+      document.write(v1);
+      document.write("<br>");
+      var v1 = 999; // 오류가 나야함
+      document.write(v1);
+      document.write("<br>");
+      //   v2 = 111;  2)
+      var v2 = 111;
+      document.write(v2);
+      //   v3 = "하하하"; 2)
+      var v3 = 111;
+      document.write("<br>" + v3);
+      if (10 > 5) {
+        var v1 = 444; // 3)다른언어에서는 지역변수
+                    // 그러나 전역변수로 결과가 출력   -> let 을 사용해야 지역변수가 된다.
+        document.write("<br>" + v1); //444
+        let v2 = 555;
+        // let v2 =777; //let은 var과 다르게 같은변수명 중복선언x
+      }
+      document.write("<br>" + v1); //444 3번결과
+      document.write("<br>" + v2);
+    </script>
+  </body>
+</html>
